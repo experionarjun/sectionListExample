@@ -22,7 +22,7 @@ export default class sectionListExample extends Component {
           renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>}
           renderSectionHeader={({section}) => <Text style={styles.title}>{section.title}</Text>}
           ItemSeparatorComponent={()=><View style={styles.itemSeparator}/>}
-          // keyExtractor={(item)=>item.name}
+          keyExtractor={(item)=>item.name}
           sections={data}
         />
       </View>
